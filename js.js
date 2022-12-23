@@ -13,14 +13,22 @@ if (lang == 'en') {arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];}
 console.log(arr);
 
 // Пример 3 ?????????????????
-let num_3 = 86;
-if ( num_3 >= 10 && num_3 <= 99 || num_3 <= -10 ){
+let num_3 = -555;
+if ( num_3 >= 10 && num_3 <= 99 || num_3 <= -10 && num_3 >= -100 ){
 
 		if (num_3>0){
 			console.log(`Число ${num_3} двухзначное положительное.`)
 		}else if(num_3<0){
 			console.log(`Число ${num_3} двухзначное отрицательное.`)
 		}
+
+}else if ( num_3 >= 100 && num_3 <= 999 || num_3 <= -100 ){
+
+	if (num_3>0){
+		console.log(`Число ${num_3} трёхзначное положительное.`)
+	}else if(num_3<0){
+		console.log(`Число ${num_3} трёхзначное отрицательное.`)
+	}
 }else{
 	if (num_3>0){
 		console.log(`Число ${num_3} однозначное положительное.`)
